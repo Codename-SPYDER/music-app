@@ -1,4 +1,4 @@
 {
-  "buildCommand": "yarn install && ./node_modules/.bin/vite build",
+  "buildCommand": "yarn install && vite build",
   "framework": "vite"
 }
