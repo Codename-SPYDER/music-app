@@ -18,11 +18,14 @@ export default function AroundYou() {
   }
 
   useEffect(() => {
-    axios.get('https://geo.ipify.org/api/v2/country?apiKey=at_q8pYkLg2paPo0waa72XdsBxQxrBfn')
+    const geoKey = import.meta.env.VITE_GEO_API_KEY;
+    axios.get(`https://geo.ipify.org/api/v2/country?apiKey=${geoKey}`)
       .then(res => (setCountry(res?.data?.location?.country)))
       .catch(err => console.log(err))
       .finally(() => setLoading(false))
   }, [country])
+
+ 
 
   if (!data) return <div>Loading...</div>;
 
