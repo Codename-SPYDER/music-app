@@ -35,8 +35,8 @@ export default function Discover() {
     <div className='flex flex-col'>
       {help ? 
       (
-        <div className="overflow-y-auto fixed w-full h-screen bg-[#5f2b8a]/60 flex flex-col justify-center items-center z-20 top-0 left-0">
-		      <p className="bg-gray-100 mb-24 w-3/4 2xl:w-1/2 p-8 rounded-md xl:text-lg border-gray-400 border-2 max-[600px]:text-sm max-[600px]:p-3 max-[600px]:w-full max-[600px]:mb-10">
+        <div className="fixed w-full h-screen bg-[#5f2b8a]/60 flex flex-col justify-center items-center z-20 top-0 left-0">
+		      <p className="overflow-y-auto bg-gray-100 mb-24 w-3/4 2xl:w-1/2 p-8 rounded-md xl:text-lg border-gray-400 border-2 max-[600px]:text-sm max-[600px]:p-3 max-[600px]:w-full max-[600px]:mb-10">
 			      Hi, welcome to my spotify clone Webapp! <br/><br/> Allow me to provide you with a short tutorial.
 			      You can view the top charts, top artists, and top songs in your country by selecting one of the pages on the left. 
 			      You can also play and pause songs, if you wish to play the next song in your search simply skip to the next one.
